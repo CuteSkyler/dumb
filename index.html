@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang=en>
+    <style>
+        @keyframes cunt{
+                0% {background-color: rgb(255,0,0);}
+                12.5% {background-color: rgb(255,0,0);}
+                25% {background-color: rgb(255, 128, 0);}
+                37.5% {background-color: rgb(255,255,0);}
+                50% {background-color: rgb(0,255,0);}
+                62.5% {background-color: rgb(0,255,128);}
+                75% {background-color: rgb(0,255,255);}
+                87.5% {background-color: rgb(128,128,255);}
+                100% {background-color: rgb(255,0,0);}
+        }
+        @keyframes cuntB{
+                0% {color: rgb(255,0,0);}
+                12.5% {color: rgb(255,0,0);}
+                25% {color: rgb(255, 128, 0);}
+                37.5% {color: rgb(255,255,0);}
+                50% {color: rgb(0,255,0);}
+                62.5% {color: rgb(0,255,128);}
+                75% {color: rgb(0,255,255);}
+                87.5% {color: rgb(128,128,255);}
+                100% {color: rgb(255,0,0);}
+        }
+        @keyframes kut{
+            0% {transform: rotateY(0deg);}
+            100% {transform: rotateY(360deg);}
+        }
+        body{
+            animation: cunt 10s infinite;
+            background-image: url("bg.png");
+            background-blend-mode:multiply;
+            background-size: 100%;
+        }
+        p{
+           text-align: center; 
+        }
+        img.clickable{
+            width: 25%;
+            height: auto;
+            margin-left: 27.5%;
+            margin-right: auto;
+            transition: transform .1s;
+        }
+        img.clickableB{
+            width: 25%;
+            height: auto;
+            margin-left: 37.5%;
+            margin-right: auto;
+            transition: transform .1s;
+        }
+        img.clickable:hover{
+            transform: scale(1.25);
+        }
+        img.clickable:active{
+            transform: scaleX(2);
+        }
+        img.clickableB:hover{
+            transform: scale(1.25);
+        }
+        img.clickableB:active{
+            transform: scaleX(2);
+        }
+        p.counter{
+            display: inline-block;
+        }
+        p.amountA{
+            animation: cuntB 16ms infinite;
+            display: inline-block;
+            margin-left: 4.75%;
+        }
+        div.circleC {
+        animation: kut 6s infinite;
+        -moz-transform: rotateY(45deg);
+        -o-transform: rotateY(45deg);
+        transform: rotateY(45deg);
+        background-color: #3e6ac2;
+      }
+
+    </style>
+    <head>
+        <title>What The Fuck</title>
+    </head>
+    <body>
+        <a><p id="number" style="font-size: 650%; margin-top: 0px;">0</p></a>
+        <p style="margin-top: 0%;"></p>
+        <a><img id="c1" src="cursors/1.png" onclick="addClick(1)" class="clickable" style="height: auto; width: 4.75%; margin-left: 31.5%"></a>
+        <a><img id="c2" src="cursors/2.png" onclick="addClick(2)" class="clickable" style="height: auto; width: 4.75%; margin-left: 0%;"></a>
+        <a><img id="c3" src="cursors/3.png" onclick="addClick(3)" class="clickable" style="height: auto; width: 4.75%; margin-left: 0%;"></a>
+        <a><img id="c4" src="cursors/4.png" onclick="addClick(4)" class="clickable" style="height: auto; width: 4.75%; margin-left: 0%;"></a>
+        <a><img id="c5" src="cursors/5.png" onclick="addClick(5)" class="clickable" style="height: auto; width: 4.75%; margin-left: 0%;"></a>
+        <a><img id="c6" src="cursors/6.png" onclick="addClick(6)" class="clickable" style="height: auto; width: 4.75%; margin-left: 0%;"></a>
+        <a><img id="c7" src="cursors/7.png" onclick="addClick(7)" class="clickable" style="height: auto; width: 4.75%; margin-left: 0%;"></a>
+        <div></div>
+        <a><img src="pan.png" onclick="addAuto(1)" class="clickable" style="height: auto; width: 5%"></a>
+        <a><img src="spice.png" onclick="addAuto(3)" class="clickable" style="height: auto; width: 5%; margin-left: 0%;"></a>
+        <a><img src="ham.png" onclick="addAuto(5)" class="clickable" style="height: auto; width: 5%; margin-left: 0%;"></a>
+        <a><img src="cheese.png" onclick="addAuto(10)" class="clickable" style="height: auto; width: 5%; margin-left: 0%;"></a>
+        <a><img src="steroids.png" onclick="addAuto(25)" class="clickable" style="height: auto; width: 5%; margin-left: 0%;"></a>
+        <a><img src="toaster.png" onclick="addAuto(50)" class="clickable" style="height: auto; width: 5%; margin-left: 0%;"></a>
+        <a><img src="bread.png" onclick="addAuto(100)" class="clickable" style="height: auto; width: 5%; margin-left: 0%;"></a>
+        <a><img src="factory.png" onclick="addAuto(1000)" class="clickable" style="height: auto; width: 5%; margin-left: 0%;"></a>
+        <div></div>
+        <p class="amountA" style="margin-left: 29%;"><b id="panAm">0</b></p>
+        <p class="amountA"><b id="spiceAm">0</b></p>
+        <p class="amountA"><b id="hamAm">0</b></p>
+        <p class="amountA"><b id="cheeseAm">0</b></p>
+        <p class="amountA"><b id="steroidsAm">0</b></p>
+        <p class="amountA"><b id="toasterAm">0</b></p>
+        <p class="amountA"><b id="breadAm">0</b></p>
+        <p class="amountA"><b id="factoryAm">0</b></p>
+        <div></div>
+        <div class="circleD" style="z-index: 0; position: fixed; margin-left: 36.5%; margin-bottom: 40%;"><img style="z-index: 25565; width: 25%; overflow: hidden; position: fixed;" class="circleC" src="circle.png"></div>
+        <div style="z-index: 1;"><a id="clickbox" class="clickable" onclick="addCheese(parseInt(document.getElementById('clickAm').innerHTML))"><img src="grill.png" class="clickableB" id="why" style="z-index: 1;"></a></div>
+        <a id="dice" class="clickable" onclick="randomCheese()"><img src="dice.png" class="clickable" id="die" style="width: 10%;"></a>
+        <p id="chances" class="counter">0</p> <p id="clickAm" class="counter">1</p>
+        <p id="amount" class="counter">0</p> <p id="autoAm" class="counter">0</p>
+        <input type="button" onkeypress="addCheese(parseInt(document.getElementById('clickAm').innerHTML))">
+    </body>
+    <script>
+            var creation = document.createElement("img")
+            var bread = "bread.png"
+            var cheese = "cheese.png"
+            var factory = "factory.png"
+            var ham = "ham.png"
+            var pan = "pan.png"
+            var spice = "spice.png"
+            var steroids = "steroids.png"
+            var toaster = "toaster.png"
+
+            var autoAmount = parseInt(document.getElementById("autoAm").innerHTML)
+
+            function addTime(yep){
+                var q = 0
+                q += parseFloat(document.getElementById("timeAm").innerHTML)*0.5
+                document.getElementById("timeAm").innerHTML = q
+            };
+
+            function addCheese(yep){
+                var cheeseVariable = 0
+                cheeseVariable += parseInt(document.getElementById("number").innerHTML)+yep
+                document.getElementById("number").innerHTML = cheeseVariable
+                return cheeseVariable
+            };
+            
+            function addClick(amountof){
+                if(amountof==1){
+                    if(parseInt(document.getElementById("number").innerHTML)>=1000){
+                        var rip = 0
+                        var minusAm = 1000
+                        rip = parseInt(document.getElementById("number").innerHTML)-minusAm
+                        document.getElementById("clickAm").innerHTML = parseInt(document.getElementById("clickAm").innerHTML)+1
+                        document.getElementById("number").innerHTML = rip
+                        document.getElementById("c1").style.width = "5%"
+                        document.getElementById("c2").style.width = "4.75%"
+                        document.getElementById("c3").style.width = "4.75%"
+                        document.getElementById("c4").style.width = "4.755%"
+                        document.getElementById("c5").style.width = "4.75%"
+                        document.getElementById("c6").style.width = "4.75%"
+                        document.getElementById("c7").style.width = "4.75%"
+                    }
+                    else{
+                        return
+                    };
+                }
+                else if(amountof==2){
+                    if(parseInt(document.getElementById("number").innerHTML)>=10000){
+                        var rip = 0
+                        var minusAm = 10000
+                        rip = parseInt(document.getElementById("number").innerHTML)-minusAm
+                        document.getElementById("clickAm").innerHTML = parseInt(document.getElementById("clickAm").innerHTML)+10
+                        document.getElementById("number").innerHTML = rip
+                        document.getElementById("c2").style.width = "5%"
+                        document.getElementById("c1").style.width = "4.75%"
+                        document.getElementById("c3").style.width = "4.75%"
+                        document.getElementById("c4").style.width = "4.755%"
+                        document.getElementById("c5").style.width = "4.75%"
+                        document.getElementById("c6").style.width = "4.75%"
+                        document.getElementById("c7").style.width = "4.75%"
+                    }
+                    else{
+                        return
+                    };
+                }
+                else if(amountof==3){
+                    if(parseInt(document.getElementById("number").innerHTML)>=100000){
+                        var rip = 0
+                        var minusAm = 100000
+                        rip = parseInt(document.getElementById("number").innerHTML)-minusAm
+                        document.getElementById("clickAm").innerHTML = parseInt(document.getElementById("clickAm").innerHTML)+100
+                        document.getElementById("number").innerHTML = rip
+                        document.getElementById("c3").style.width = "5%"
+                        document.getElementById("c2").style.width = "4.75%"
+                        document.getElementById("c1").style.width = "4.75%"
+                        document.getElementById("c4").style.width = "4.755%"
+                        document.getElementById("c5").style.width = "4.75%"
+                        document.getElementById("c6").style.width = "4.75%"
+                        document.getElementById("c7").style.width = "4.75%"
+                    }
+                    else{
+                        return
+                    };
+                }
+                else if(amountof==4){
+                    if(parseInt(document.getElementById("number").innerHTML)>=1000000){
+                        var rip = 0
+                        var minusAm = 1000000
+                        rip = parseInt(document.getElementById("number").innerHTML)-minusAm
+                        document.getElementById("clickAm").innerHTML = parseInt(document.getElementById("clickAm").innerHTML)+1000
+                        document.getElementById("number").innerHTML = rip
+                        document.getElementById("c4").style.width = "5%"
+                        document.getElementById("c2").style.width = "4.75%"
+                        document.getElementById("c3").style.width = "4.75%"
+                        document.getElementById("c1").style.width = "4.755%"
+                        document.getElementById("c5").style.width = "4.75%"
+                        document.getElementById("c6").style.width = "4.75%"
+                        document.getElementById("c7").style.width = "4.75%"
+                    }
+                    else{
+                        return
+                    };
+                }
+                else if(amountof==5){
+                    if(parseInt(document.getElementById("number").innerHTML)>=10000000){
+                        var rip = 0
+                        var minusAm = 10000000
+                        rip = parseInt(document.getElementById("number").innerHTML)-minusAm
+                        document.getElementById("clickAm").innerHTML = parseInt(document.getElementById("clickAm").innerHTML)+10000
+                        document.getElementById("number").innerHTML = rip
+                        document.getElementById("c5").style.width = "5%"
+                        document.getElementById("c2").style.width = "4.75%"
+                        document.getElementById("c3").style.width = "4.75%"
+                        document.getElementById("c4").style.width = "4.755%"
+                        document.getElementById("c1").style.width = "4.75%"
+                        document.getElementById("c6").style.width = "4.75%"
+                        document.getElementById("c7").style.width = "4.75%"
+                    }
+                    else{
+                        return
+                    };
+                }
+                else if(amountof==6){
+                    if(parseInt(document.getElementById("number").innerHTML)>=100000000){
+                        var rip = 0
+                        var minusAm = 100000000
+                        rip = parseInt(document.getElementById("number").innerHTML)-minusAm
+                        document.getElementById("clickAm").innerHTML = parseInt(document.getElementById("clickAm").innerHTML)+100000
+                        document.getElementById("number").innerHTML = rip
+                        document.getElementById("c6").style.width = "5%"
+                        document.getElementById("c2").style.width = "4.75%"
+                        document.getElementById("c3").style.width = "4.75%"
+                        document.getElementById("c4").style.width = "4.755%"
+                        document.getElementById("c5").style.width = "4.75%"
+                        document.getElementById("c1").style.width = "4.75%"
+                        document.getElementById("c7").style.width = "4.75%"
+                    }
+                    else{
+                        return
+                    };
+                }
+                else if(amountof==7){
+                    if(parseInt(document.getElementById("number").innerHTML)>=1000000000){
+                        var rip = 0
+                        var minusAm = 1000000000
+                        rip = parseInt(document.getElementById("number").innerHTML)-minusAm
+                        document.getElementById("clickAm").innerHTML = parseInt(document.getElementById("clickAm").innerHTML)+1000000
+                        document.getElementById("number").innerHTML = rip
+                        document.getElementById("c7").style.width = "5%"
+                        document.getElementById("c2").style.width = "4.75%"
+                        document.getElementById("c3").style.width = "4.75%"
+                        document.getElementById("c4").style.width = "4.755%"
+                        document.getElementById("c5").style.width = "4.75%"
+                        document.getElementById("c6").style.width = "4.75%"
+                        document.getElementById("c1").style.width = "4.75%"
+                    }
+                    else{
+                        return
+                    };
+                }
+                else{
+                    console.log("Stop using addClick(N) you fucking piece of shit")
+                    document.getElementById("number").innerHTML = "You cheated, cunt"
+                };
+            }
+
+            function addAuto(amountof){
+                if(amountof==1){
+                    if(parseInt(document.getElementById("number").innerHTML)>=100){
+                        var quo = 0
+                        var rip = 0
+                        var minusAm = 100
+                        var plusAm = 1
+                        ooh = parseInt(document.getElementById("panAm").innerHTML)+plusAm
+                        document.getElementById("panAm").innerHTML = ooh
+                        quo += parseInt(document.getElementById("autoAm").innerHTML)+amountof
+                        rip = parseInt(document.getElementById("number").innerHTML)-minusAm
+                        document.getElementById("autoAm").innerHTML = quo
+                        document.getElementById("number").innerHTML = rip
+                    }
+                    else{
+                        return
+                    }
+                }
+                else if(amountof==3){
+                    if(parseInt(document.getElementById("number").innerHTML)>=500){
+                        var quo = 0
+                        var rip = 0
+                        var minusAm = 500
+                        var plusAm = 1
+                        ooh = parseInt(document.getElementById("spiceAm").innerHTML)+plusAm
+                        document.getElementById("spiceAm").innerHTML = ooh
+                        quo += parseInt(document.getElementById("autoAm").innerHTML)+amountof
+                        rip = parseInt(document.getElementById("number").innerHTML)-minusAm
+                        document.getElementById("autoAm").innerHTML = quo
+                        document.getElementById("number").innerHTML = rip
+                    }
+                    else{
+                        return
+                    }
+                }
+                else if(amountof==5){
+                    if(parseInt(document.getElementById("number").innerHTML)>=2500){
+                        var quo = 0
+                        var rip = 0
+                        var minusAm = 2500
+                        var plusAm = 1
+                        ooh = parseInt(document.getElementById("hamAm").innerHTML)+plusAm
+                        document.getElementById("hamAm").innerHTML = ooh
+                        quo += parseInt(document.getElementById("autoAm").innerHTML)+amountof
+                        rip = parseInt(document.getElementById("number").innerHTML)-minusAm
+                        document.getElementById("autoAm").innerHTML = quo
+                        document.getElementById("number").innerHTML = rip
+                    }
+                    else{
+                        return
+                    }
+                }
+                else if(amountof==10){
+                    if(parseInt(document.getElementById("number").innerHTML)>=5000){
+                        var quo = 0
+                        var rip = 0
+                        var minusAm = 5000
+                        var plusAm = 1
+                        ooh = parseInt(document.getElementById("cheeseAm").innerHTML)+plusAm
+                        document.getElementById("cheeseAm").innerHTML = ooh
+                        quo += parseInt(document.getElementById("autoAm").innerHTML)+amountof
+                        rip = parseInt(document.getElementById("number").innerHTML)-minusAm
+                        document.getElementById("autoAm").innerHTML = quo
+                        document.getElementById("number").innerHTML = rip
+                    }
+                    else{
+                        return
+                    }
+                }
+                else if(amountof==25){
+                    if(parseInt(document.getElementById("number").innerHTML)>=10000){
+                        var quo = 0
+                        var rip = 0
+                        var minusAm = 10000
+                        var plusAm = 1
+                        ooh = parseInt(document.getElementById("steroidsAm").innerHTML)+plusAm
+                        document.getElementById("steroidsAm").innerHTML = ooh
+                        quo += parseInt(document.getElementById("autoAm").innerHTML)+amountof
+                        rip = parseInt(document.getElementById("number").innerHTML)-minusAm
+                        document.getElementById("autoAm").innerHTML = quo
+                        document.getElementById("number").innerHTML = rip
+                    }
+                    else{
+                        return
+                    }
+                }
+                else if(amountof==50){
+                    if(parseInt(document.getElementById("number").innerHTML)>=50000){
+                        var quo = 0
+                        var rip = 0
+                        var minusAm = 50000
+                        var plusAm = 1
+                        ooh = parseInt(document.getElementById("toasterAm").innerHTML)+plusAm
+                        document.getElementById("toasterAm").innerHTML = ooh
+                        quo += parseInt(document.getElementById("autoAm").innerHTML)+amountof
+                        rip = parseInt(document.getElementById("number").innerHTML)-minusAm
+                        document.getElementById("autoAm").innerHTML = quo
+                        document.getElementById("number").innerHTML = rip
+                    }
+                    else{
+                        return
+                    }
+                }
+                else if(amountof==100){
+                    if(parseInt(document.getElementById("number").innerHTML)>=100000){
+                        var quo = 0
+                        var rip = 0
+                        var minusAm = 100000
+                        var plusAm = 1
+                        ooh = parseInt(document.getElementById("breadAm").innerHTML)+plusAm
+                        document.getElementById("breadAm").innerHTML = ooh
+                        quo += parseInt(document.getElementById("autoAm").innerHTML)+amountof
+                        rip = parseInt(document.getElementById("number").innerHTML)-minusAm
+                        document.getElementById("autoAm").innerHTML = quo
+                        document.getElementById("number").innerHTML = rip
+                    }
+                    else{
+                        return
+                    }
+                }
+                else if(amountof==1000){
+                    if(parseInt(document.getElementById("number").innerHTML)>=1000000){
+                        var quo = 0
+                        var rip = 0
+                        var minusAm = 1000000
+                        var plusAm = 1
+                        ooh = parseInt(document.getElementById("factoryAm").innerHTML)+plusAm
+                        document.getElementById("factoryAm").innerHTML = ooh
+                        quo += parseInt(document.getElementById("autoAm").innerHTML)+amountof
+                        rip = parseInt(document.getElementById("number").innerHTML)-minusAm
+                        document.getElementById("autoAm").innerHTML = quo
+                        document.getElementById("number").innerHTML = rip
+                    }
+                    else{
+                        return
+                    }
+                }
+                else{
+                    console.log("Stop using addAuto(N) you fucking piece of shit")
+                    document.getElementById("number").innerHTML = "You cheated, cunt"
+                }
+            }
+
+            function randomCheese(){
+                var cuck = 0
+                var huhwow = parseFloat(document.getElementById("chances").innerHTML)
+                var wowhuh = parseInt(document.getElementById("amount").innerHTML)
+                var huh = Math.floor(Math.random()*(2*huhwow))
+                cuck =+ document.getElementById("number").innerHTML
+                if(huh>50|huhwow>100){
+                    document.getElementById("chances").innerHTML = huhwow+0.25
+                    document.getElementById("amount").innerHTML = wowhuh+1
+                    document.getElementById("number").innerHTML = document.getElementById("number").innerHTML*25
+                }
+                else{
+                    document.getElementById("chances").innerHTML = huhwow+0.25
+                    document.getElementById("amount").innerHTML = wowhuh+1
+                    document.getElementById("number").innerHTML = 1
+                }
+            }
+
+            setInterval((huh) => {
+                    addCheese(parseInt(document.getElementById("autoAm").innerHTML))
+                }, 1000);
+
+    </script>
+</html>
