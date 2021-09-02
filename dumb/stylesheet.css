@@ -1,0 +1,26 @@
+img.clicky{
+    width: 10vw;
+    height: 10vh;
+    transition: ease-in-out 0.05s;
+}
+
+img.clicky:hover{
+    width: 11vw;
+    height: 11vh;
+}
+
+img.clicky:active{
+    width: 9vw;
+    height: 9vh;
+}
+
+p.points{
+    text-align: center;
+    margin-left: 50%;
+    margin-right: auto;
+    margin-top: 23%;
+    margin-bottom: auto;
+    font-size: 50px;
+    z-index: 50;
+    position: fixed;
+}
